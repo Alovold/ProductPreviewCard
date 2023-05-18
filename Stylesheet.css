@@ -31,7 +31,6 @@ body {
 #product-image {
     height: 450px;
     width: 300px;
-    padding-top: 4px;
     border-radius: 10px 0 0 10px;
 }
 
@@ -44,7 +43,7 @@ body {
     width: 300px;
     justify-content: center;
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 20px;
     background-color: var(--White);
     border-radius: 0 10px 10px 0;
 }
@@ -60,6 +59,9 @@ body {
 
 #product-info {
     color: var(--Dark-grayish-blue);
+    line-height: 27px;
+    margin-top: 5px;
+    font-size: 14px;
 }
 
 #prices {
@@ -71,12 +73,15 @@ body {
     font-family: 'Fraunces', serif;
     font-size: xx-large;
     color: var(--Dark-cyan);
+    margin-top: 0%;
+    margin-bottom: 10%;
 }
 
 #product-old-price {
     text-decoration: line-through;
     align-self: center;
     padding-left: 30px;
+    margin-top: 0%;
 }
 
 #add-to-cart {
@@ -86,4 +91,41 @@ body {
     color: var(--White);
     border-radius: 10px;
     
+}
+
+@media screen and (max-width: 375px) {
+    .product-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #product-image {
+        height: 250px;
+        width: 350px;
+        padding-top: 4px;
+        content: url(./images/image-product-mobile.jpg);
+        border-radius: 10px 10px 0 0;
+    }
+    
+    .product-text {
+        border-radius: 0 0 10px 10px;
+        height: 400px;
+    }
+
+    #product-title {
+        line-height: 30px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    #product-info {
+        line-height: 23px;
+        margin-bottom: 20px;
+    }
+
+    #product-label {
+        margin-top: 0;
+    }
 }
